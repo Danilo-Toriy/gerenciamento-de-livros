@@ -3,9 +3,9 @@ package entity;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name="TBL_LIVRO")
+@Table(name="tb_livro")
 
-public class LivroModel {
+public class Livro {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -18,7 +18,7 @@ public class LivroModel {
     @Column(name="Ano_de_publicacao")
     private int anoPublicacao;
 
-    public LivroModel(){
+    public Livro(){
 
     }
 
