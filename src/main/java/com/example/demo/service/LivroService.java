@@ -1,9 +1,9 @@
-package service;
+package com.example.demo.service;
 
-import entity.Livro;
+import com.example.demo.entity.Livro;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import repository.LivroRepository;
+import com.example.demo.repository.LivroRepository;
 
 import java.util.List;
 import java.util.Optional;
@@ -18,7 +18,7 @@ public class LivroService {
         return livroRepository.findAll();
     }
 
-    public Livro create(Livro livro){
+    public Livro save(Livro livro){
         return livroRepository.save(livro);
     }
 
